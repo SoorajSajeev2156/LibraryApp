@@ -4,13 +4,13 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* LIGHT MODE */
+
 body.light {
     background: #f8fafc;
     color: #0f172a;
 }
 
-/* DARK MODE */
+
 body.dark {
     background: #020617;
     color: #e5e7eb;

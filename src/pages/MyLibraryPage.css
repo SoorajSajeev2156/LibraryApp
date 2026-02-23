@@ -1,6 +1,4 @@
-/* =====================
-   PAGE
-===================== */
+
 
 .library-page {
   padding: 3rem 4rem;
@@ -8,13 +6,12 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* LIGHT MODE */
+
 body.light .library-page {
   background: #f8fafc;
   color: #0f172a;
 }
 
-/* DARK MODE */
 body.dark .library-page {
   background: #020617;
   color: #f8fafc;
@@ -24,9 +21,7 @@ body.dark .library-page {
   margin-bottom: 2rem;
 }
 
-/* =====================
-   GRID
-===================== */
+
 
 .library-grid {
   display: grid;
@@ -34,9 +29,7 @@ body.dark .library-page {
   gap: 2rem;
 }
 
-/* =====================
-   CARD
-===================== */
+
 
 .library-card {
   border-radius: 12px;
@@ -45,13 +38,11 @@ body.dark .library-page {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* LIGHT CARD */
 body.light .library-card {
   background: #ffffff;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* DARK CARD */
 body.dark .library-card {
   background: #1e293b;
   box-shadow: 0 10px 25px rgba(0,0,0,0.45);
@@ -65,9 +56,7 @@ body.dark .library-card {
   cursor: pointer;
 }
 
-/* =====================
-   TEXT
-===================== */
+
 
 .library-card h3 {
   margin-top: 0.8rem;
@@ -94,9 +83,7 @@ body.dark .library-card p {
   color: #94a3b8;
 }
 
-/* =====================
-   BUTTON
-===================== */
+
 
 .library-card button {
   margin-top: 0.7rem;
@@ -123,9 +110,7 @@ body.dark .library-card button {
   color: #020617;
 }
 
-/* =====================
-   EMPTY STATE
-===================== */
+
 
 .library-empty {
   padding: 4rem;
@@ -140,9 +125,7 @@ body.dark .library-empty {
   color: #94a3b8;
 }
 
-/* =====================
-   MOBILE
-===================== */
+
 
 @media (max-width: 768px) {
   .library-page {

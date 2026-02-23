@@ -27,7 +27,7 @@ export default function HeroSlider() {
                 <h1>Explore Your Next Read</h1>
                 <p>Discover books, authors, and knowledge from around the world</p>
 
-                {/* ✅ FUNCTIONAL BUTTON */}
+
                 <button onClick={() => navigate("/search")}>
                     Browse Collection
                 </button>

@@ -9,13 +9,13 @@
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* LOGO */
+
 .navbar-logo {
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-/* LINKS */
+
 .navbar-links {
     display: flex;
     gap: 24px;
@@ -27,7 +27,7 @@
     transition: color 0.2s ease;
 }
 
-/* ACTIONS */
+
 .navbar-actions {
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@
     align-items: center;
 }
 
-/* LIGHT MODE */
+
 .navbar.light {
     background: #ffffff;
     color: #111;
@@ -62,7 +62,7 @@
     color: #2563eb;
 }
 
-/* DARK MODE */
+
 .navbar.dark {
     background: #0f172a;
     color: #f8fafc;
@@ -76,14 +76,14 @@
 .navbar.dark a:hover {
     color: #38bdf8;
 }
-/* 🌙 Dark mode glow effect */
+
 body.dark .theme-toggle {
   color: #f8fafc;
   filter: drop-shadow(0 0 6px rgba(248, 250, 252, 0.8));
   transition: filter 0.3s ease, color 0.3s ease;
 }
 
-/* ☀️ Light mode normal look */
+
 body.light .theme-toggle {
   color: #0f172a;
   filter: none;

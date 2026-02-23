@@ -44,7 +44,7 @@ function BookDetailsPage() {
 
     return (
         <PageWrapper>
-            {/* PAGE ANIMATION */}
+
             <motion.div
                 className="book-details"
                 initial={{ opacity: 0, y: 30 }}
@@ -52,13 +52,13 @@ function BookDetailsPage() {
                 transition={{ duration: 0.4 }}
             >
 
-                {/* ✅ BACK BUTTON */}
+
                 <button className="back-btn" onClick={() => navigate(-1)}>
                     ← Back
                 </button>
 
                 <div className="details-container">
-                    {/* IMAGE ANIMATION */}
+
                     <motion.img
                         src={
                             book.imageLinks?.thumbnail ||
@@ -70,7 +70,7 @@ function BookDetailsPage() {
                         transition={{ delay: 0.2 }}
                     />
 
-                    {/* TEXT CONTAINER */}
+
                     <motion.div
                         className="details-info"
                         initial={{ opacity: 0 }}
@@ -111,7 +111,7 @@ function BookDetailsPage() {
                             {book.description || "No description available."}
                         </motion.p>
 
-                        {/* SAVE BUTTON */}
+
                         <motion.button
                             className="save-btn"
                             whileHover={{ scale: 1.05 }}

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion"; // ✅ Framer Motion
+import { motion } from "framer-motion";
 import "./TrendingBooksPage.css";
 import PageWrapper from "../components/PageWrapper";
 
 const API_URL =
     "https://www.googleapis.com/books/v1/volumes?q=bestseller&maxResults=12";
 
-/* 🔥 Animation Variants */
+
 const pageVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -46,7 +46,7 @@ export default function TrendingBooksPage() {
 
     return (
         <PageWrapper>
-            {/* PAGE ANIMATION */}
+
             <motion.div
                 className="trending-page"
                 variants={pageVariants}
@@ -59,7 +59,7 @@ export default function TrendingBooksPage() {
                 {loading ? (
                     <div className="loader">Loading trending books...</div>
                 ) : (
-                    /* GRID ANIMATION */
+
                     <motion.div
                         className="book-grid"
                         variants={gridVariants}
@@ -70,7 +70,7 @@ export default function TrendingBooksPage() {
                             const info = book.volumeInfo;
 
                             return (
-                                /* CARD ANIMATION */
+
                                 <motion.div
                                     className="book-card"
                                     key={book.id}

@@ -1,6 +1,4 @@
-/* =======================
-   PAGE
-======================= */
+
 
 .trending-page {
   padding: 40px 60px;
@@ -8,13 +6,13 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* LIGHT MODE */
+
 body.light .trending-page {
   background: #f5f6f8;
   color: #1f2937;
 }
 
-/* DARK MODE */
+
 body.dark .trending-page {
   background: #020617;
   color: #f8fafc;
@@ -34,9 +32,7 @@ body.dark .subtitle {
   color: #94a3b8;
 }
 
-/* =======================
-   GRID
-======================= */
+
 
 .book-grid {
   display: grid;
@@ -44,9 +40,7 @@ body.dark .subtitle {
   gap: 28px;
 }
 
-/* =======================
-   CARD
-======================= */
+
 
 .book-card {
   border-radius: 16px;
@@ -56,13 +50,11 @@ body.dark .subtitle {
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
 }
 
-/* LIGHT CARD */
 body.light .book-card {
   background: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* DARK CARD */
 body.dark .book-card {
   background: #1e293b;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -72,9 +64,7 @@ body.dark .book-card {
   transform: translateY(-8px);
 }
 
-/* =======================
-   IMAGE
-======================= */
+
 
 .book-card img {
   width: 100%;
@@ -84,9 +74,7 @@ body.dark .book-card {
   margin-bottom: 12px;
 }
 
-/* =======================
-   TEXT
-======================= */
+
 
 .book-card h3 {
   font-size: 15px;
@@ -116,9 +104,7 @@ body.dark .book-card p {
   color: #94a3b8;
 }
 
-/* =======================
-   MOBILE
-======================= */
+
 
 @media (max-width: 768px) {
   .trending-page {

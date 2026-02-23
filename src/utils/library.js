@@ -8,7 +8,6 @@ export function getLibrary() {
 export function saveToLibrary(book) {
   const library = getLibrary();
 
-  // avoid duplicates
   const exists = library.find((item) => item.id === book.id);
   if (exists) return;
 
