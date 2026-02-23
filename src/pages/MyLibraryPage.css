@@ -1,0 +1,151 @@
+/* =====================
+   PAGE
+===================== */
+
+.library-page {
+  padding: 3rem 4rem;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT MODE */
+body.light .library-page {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* DARK MODE */
+body.dark .library-page {
+  background: #020617;
+  color: #f8fafc;
+}
+
+.library-page h1 {
+  margin-bottom: 2rem;
+}
+
+/* =====================
+   GRID
+===================== */
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+/* =====================
+   CARD
+===================== */
+
+.library-card {
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* LIGHT CARD */
+body.light .library-card {
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* DARK CARD */
+body.dark .library-card {
+  background: #1e293b;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+}
+
+.library-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =====================
+   TEXT
+===================== */
+
+.library-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
+body.light .library-card h3 {
+  color: #0f172a;
+}
+
+body.dark .library-card h3 {
+  color: #f8fafc;
+}
+
+.library-card p {
+  font-size: 0.9rem;
+}
+
+body.light .library-card p {
+  color: #6b7280;
+}
+
+body.dark .library-card p {
+  color: #94a3b8;
+}
+
+/* =====================
+   BUTTON
+===================== */
+
+.library-card button {
+  margin-top: 0.7rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.library-card button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+body.light .library-card button {
+  background: #e63946;
+  color: white;
+}
+
+body.dark .library-card button {
+  background: #f87171;
+  color: #020617;
+}
+
+/* =====================
+   EMPTY STATE
+===================== */
+
+.library-empty {
+  padding: 4rem;
+  text-align: center;
+}
+
+body.light .library-empty {
+  color: #6b7280;
+}
+
+body.dark .library-empty {
+  color: #94a3b8;
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 768px) {
+  .library-page {
+    padding: 2rem;
+  }
+}
